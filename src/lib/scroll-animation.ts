@@ -4,8 +4,6 @@ import { Vector3 } from 'webgi'
 export function scrollAnimation(position : Vector3, target: Vector3, isMobile: boolean, onUpdate: () => void) {
     const tl = gsap.timeline()
 
-    console.log(isMobile)
-
     tl.to(position, {
         x: !isMobile ? -8 : -7,
         y: !isMobile ? -12 : -12.2,

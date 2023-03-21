@@ -105,8 +105,6 @@ export const WebgiViewer = forwardRef<WebgiViewerHandle, WebgiViewerProps>(({ co
         const isMobileOrTablet = mobileAndTabletCheck();
         setIsMobile(isMobileOrTablet)
 
-        console.log(isMobileOrTablet)
-
         const manager = await viewer.addPlugin(AssetManagerPlugin)
 
         const camera = viewer.scene.activeCamera;
